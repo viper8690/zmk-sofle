@@ -117,7 +117,7 @@
 
         softoff {
             bindings = <&soft_off>;
-            key-positions = <14 28 40>;
+            key-positions = <26 40 46>;
         };
 
 
@@ -125,7 +125,7 @@
         // Both shifts = Caps Lock
         caps_combo {
             bindings = <&kp CAPS>;
-            key-positions = <26 46>;
+            key-positions = <39 51>;
             timeout-ms = <50>;
         };
 
@@ -139,6 +139,14 @@
         combo_tog2 {
             bindings = <&tog 2>;
             key-positions = <55 59>;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 
