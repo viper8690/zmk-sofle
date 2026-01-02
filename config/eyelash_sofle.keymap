@@ -99,6 +99,15 @@
             bindings = <&mkp LCLK>, <&mkp RCLK>;
         };
 
+        // Hold-tap: Tap = LCLK, Hold = RCLK
+        ht_click: ht_click {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mkp>, <&mkp>;
+        };
+
 
     };
 
@@ -110,14 +119,7 @@
             key-positions = <14 28 40>;
         };
 
-        // Hold-tap: Tap = LCLK, Hold = RCLK
-        ht_click: ht_click {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&mkp>, <&mkp>;
-        };
+
 
         // Both shifts = Caps Lock
         caps_combo {
