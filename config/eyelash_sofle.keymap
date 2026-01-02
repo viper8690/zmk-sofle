@@ -139,7 +139,7 @@
 &kp GRAVE      &trans         &trans         &trans        &trans           &trans           &mmv MOVE_DOWN   &trans        &kp PG_UP     &kp UP        &kp HOME      &kp LBKT        &kp RBKT
 &trans         &trans         &trans         &trans        &mac_spotlight   &trans           &mmv MOVE_LEFT   &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans          &trans
 &trans         &trans         &kp DEL        &mac_copy     &mac_paste       &trans           &mmv MOVE_RIGHT  &trans        &trans        &trans        &kp BSLH      &trans          &trans
-&kp C_MUTE     &trans         &trans         &trans        &trans           &trans           &mkp LCLK        &td_click     &msc SCRL_UP  &msc SCRL_DN  &trans        &trans
+&kp C_MUTE     &trans         &trans         &trans        &trans           &trans           &mkp LCLK        &td_click     &msc SCRL_UP  &msc SCRL_DOWN  &trans        &trans
             >;
 
             display-name = "layer1";
