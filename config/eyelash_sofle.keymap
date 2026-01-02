@@ -102,7 +102,7 @@
         // Tap dance: 5 taps to toggle layer 1
         td_tog1: td_tog1 {
             compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <1>;
+            #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&none>, <&none>, <&none>, <&none>, <&tog 1>;
         };
@@ -110,7 +110,7 @@
         // Tap dance: 5 taps to toggle layer 2
         td_tog2: td_tog2 {
             compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <1>;
+            #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&none>, <&none>, <&none>, <&none>, <&tog 2>;
         };
