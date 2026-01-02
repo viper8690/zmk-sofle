@@ -99,38 +99,7 @@
             bindings = <&mkp LCLK>, <&mkp RCLK>;
         };
 
-        // Tap dance: 5 taps to toggle layer 1
-        td_tog1: td_tog1 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&none>, <&none>, <&none>, <&none>, <&tog 1>;
-        };
 
-        // Tap dance: 5 taps to toggle layer 2
-        td_tog2: td_tog2 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&none>, <&none>, <&none>, <&none>, <&tog 2>;
-        };
-
-        // Hold-tap: HOLD = momentary layer, TAP = 5-tap toggle
-        ht_l1: ht_l1 {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <1>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&td_tog1>;
-        };
-
-        ht_l2: ht_l2 {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <1>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&td_tog2>;
-        };
     };
 
     combos {
@@ -147,6 +116,18 @@
             key-positions = <26 46>;
             timeout-ms = <50>;
         };
+
+        // Combo to toggle Layer 1 (Left Thumb Inner + Left Thumb Outer/BSPC)
+        combo_tog1 {
+             bindings = <&tog 1>;
+             key-positions = <56 57>;
+        };
+
+        // Combo to toggle Layer 2 (Left Thumb Inner + Right Thumb Inner/Space)
+        combo_tog2 {
+            bindings = <&tog 2>;
+            key-positions = <55 58>;
+        };
     };
 
     keymap {
@@ -161,7 +142,7 @@
 &kp TAB        &kp Q          &kp W          &kp E         &kp R         &kp T            &kp DOWN_ARROW   &kp Y      &kp U         &kp I         &kp O          &kp P           &kp LBKT
 &kp ESC        &mt LSHFT A    &mt LCTRL S    &mt LGUI D    &mt LALT F    &kp G            &kp LEFT_ARROW   &kp H      &mt RALT J    &mt RGUI K    &mt LCTRL L    &mt RSHFT SEMI  &kp SQT
 &kp LSHFT      &kp Z          &kp X          &kp C         &kp V         &kp B            &kp RIGHT_ARROW  &kp N      &kp M         &kp COMMA     &kp DOT        &kp FSLH        &kp RSHFT
-&kp C_MUTE     &none          &none         &ht_l2 2      &ht_l1 1         &kp BSPC         &kp SPACE        &kp ENTER  &kp RALT      &none         &none          &none
+&kp C_MUTE     &none          &none         &mo 2         &mo 1            &kp BSPC         &kp SPACE        &kp ENTER  &kp RALT      &none         &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
