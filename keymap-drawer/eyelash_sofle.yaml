@@ -59,7 +59,7 @@ layers:
   - layer2
   - layer1
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:mouse-left-click-outline$$', h: '$$mdi:mouse-right-click-outline$$'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
@@ -124,8 +124,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-left-click-outline$$
-  - '&td_click'
+  - {t: '$$mdi:mouse-left-click-outline$$', h: '$$mdi:mouse-right-click-outline$$'}
+  - {t: '$$mdi:mouse-left-click-outline$$', h: '$$mdi:mouse-right-click-outline$$'}
   - $$mdi:pan-up$$
   - $$mdi:pan-down$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -189,7 +189,7 @@ layers:
   - {t: '$$mdi:progress-download$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:mouse-left-click-outline$$', h: '$$mdi:mouse-right-click-outline$$'}
   - KP ENTER
   - KP 0
   - {t: '$$mdi:transfer$$', type: trans}
