@@ -59,10 +59,10 @@ layers:
   - layer2
   - layer1
   - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   layer1:
@@ -332,5 +332,5 @@ combos:
   k: $$mdi:apple-keyboard-caps$$
 - p: [56, 57]
   k: {t: layer1, h: toggle}
-- p: [55, 58]
+- p: [55, 59]
   k: {t: layer2, h: toggle}

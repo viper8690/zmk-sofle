@@ -622,22 +622,22 @@ rect.held, rect.combo.held {
 <g transform="translate(462, 91)" class="key keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<use href="#mdi:mouse-left-click-outline" xlink:href="#mdi:mouse-left-click-outline" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:mouse-left-click-outline"/>
+</g>
+<g transform="translate(535, 294) rotate(-30.0)" class="key keypos-59">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
 </g>
-<g transform="translate(535, 294) rotate(-30.0)" class="key enter keypos-59">
+<g transform="translate(610, 283) rotate(-30.0)" class="key enter keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key enter side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-13" height="18" width="18.0" class="key enter tap glyph mdi:keyboard-return"/>
 </g>
-<g transform="translate(610, 283) rotate(-30.0)" class="key keypos-60">
+<g transform="translate(672, 259)" class="key keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-option"/>
-</g>
-<g transform="translate(672, 259)" class="key none keypos-61">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(728, 252)" class="key none keypos-62">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
@@ -667,12 +667,12 @@ rect.held, rect.combo.held {
 </a><text x="352" y="300" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
-<path d="M357,175 l-90,72" class="combo"/>
-<path d="M357,175 l90,-72" class="combo"/>
-<rect rx="6" ry="6" x="343" y="162" width="28" height="26" class="combo"/>
+<path d="M393,276 l-123,-15" class="combo"/>
+<path d="M393,276 l123,15" class="combo"/>
+<rect rx="6" ry="6" x="379" y="264" width="28" height="26" class="combo"/>
 <a href="#layer2">
-<text x="357" y="175" class="combo tap layer-activator">layer2</text>
-</a><text x="357" y="186" class="combo hold">toggle</text>
+<text x="393" y="276" class="combo tap layer-activator">layer2</text>
+</a><text x="393" y="288" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1028,12 +1028,12 @@ rect.held, rect.combo.held {
 </a><text x="352" y="300" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
-<path d="M357,175 l-90,72" class="combo"/>
-<path d="M357,175 l90,-72" class="combo"/>
-<rect rx="6" ry="6" x="343" y="162" width="28" height="26" class="combo"/>
+<path d="M393,276 l-123,-15" class="combo"/>
+<path d="M393,276 l123,15" class="combo"/>
+<rect rx="6" ry="6" x="379" y="264" width="28" height="26" class="combo"/>
 <a href="#layer2">
-<text x="357" y="175" class="combo tap layer-activator">layer2</text>
-</a><text x="357" y="186" class="combo hold">toggle</text>
+<text x="393" y="276" class="combo tap layer-activator">layer2</text>
+</a><text x="393" y="288" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1435,12 +1435,12 @@ rect.held, rect.combo.held {
 </a><text x="352" y="300" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
-<path d="M357,175 l-90,72" class="combo"/>
-<path d="M357,175 l90,-72" class="combo"/>
-<rect rx="6" ry="6" x="343" y="162" width="28" height="26" class="combo"/>
+<path d="M393,276 l-123,-15" class="combo"/>
+<path d="M393,276 l123,15" class="combo"/>
+<rect rx="6" ry="6" x="379" y="264" width="28" height="26" class="combo"/>
 <a href="#layer2">
-<text x="357" y="175" class="combo tap layer-activator">layer2</text>
-</a><text x="357" y="186" class="combo hold">toggle</text>
+<text x="393" y="276" class="combo tap layer-activator">layer2</text>
+</a><text x="393" y="288" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1785,12 +1785,12 @@ rect.held, rect.combo.held {
 </a><text x="352" y="300" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
-<path d="M357,175 l-90,72" class="combo"/>
-<path d="M357,175 l90,-72" class="combo"/>
-<rect rx="6" ry="6" x="343" y="162" width="28" height="26" class="combo"/>
+<path d="M393,276 l-123,-15" class="combo"/>
+<path d="M393,276 l123,15" class="combo"/>
+<rect rx="6" ry="6" x="379" y="264" width="28" height="26" class="combo"/>
 <a href="#layer2">
-<text x="357" y="175" class="combo tap layer-activator">layer2</text>
-</a><text x="357" y="186" class="combo hold">toggle</text>
+<text x="393" y="276" class="combo tap layer-activator">layer2</text>
+</a><text x="393" y="288" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2135,12 +2135,12 @@ rect.held, rect.combo.held {
 </a><text x="352" y="300" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
-<path d="M357,175 l-90,72" class="combo"/>
-<path d="M357,175 l90,-72" class="combo"/>
-<rect rx="6" ry="6" x="343" y="162" width="28" height="26" class="combo"/>
+<path d="M393,276 l-123,-15" class="combo"/>
+<path d="M393,276 l123,15" class="combo"/>
+<rect rx="6" ry="6" x="379" y="264" width="28" height="26" class="combo"/>
 <a href="#layer2">
-<text x="357" y="175" class="combo tap layer-activator">layer2</text>
-</a><text x="357" y="186" class="combo hold">toggle</text>
+<text x="393" y="276" class="combo tap layer-activator">layer2</text>
+</a><text x="393" y="288" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
