@@ -99,20 +99,22 @@
             bindings = <&mkp LCLK>, <&mkp RCLK>;
         };
 
-        // Tap-toggle for layers: hold = momentary, tap 5x = toggle
-        // Using tap-dance: taps 1-4 do nothing useful, tap 5 toggles
-        tt1: tap_toggle_1 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
+        // Hold-tap for layers: HOLD = momentary layer, TAP = toggle layer
+        // Tap once to toggle on, tap again to toggle off
+        hm1: hold_mo_1 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings = <&mo 1>, <&mo 1>, <&mo 1>, <&mo 1>, <&tog 1>;
+            bindings = <&mo>, <&tog>;
         };
 
-        tt2: tap_toggle_2 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
+        hm2: hold_mo_2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings = <&mo 2>, <&mo 2>, <&mo 2>, <&mo 2>, <&tog 2>;
+            bindings = <&mo>, <&tog>;
         };
     };
 
@@ -144,7 +146,7 @@
 &kp TAB        &kp Q          &kp W          &kp E         &kp R         &kp T            &kp DOWN_ARROW   &kp Y      &kp U         &kp I         &kp O          &kp P           &kp LBKT
 &kp ESC        &mt LSHFT A    &mt LCTRL S    &mt LGUI D    &mt LALT F    &kp G            &kp LEFT_ARROW   &kp H      &mt RALT J    &mt RGUI K    &mt RCTRL L    &mt RSHFT SEMI  &kp SQT
 &kp LSHFT      &kp Z          &kp X          &kp C         &kp V         &kp B            &kp RIGHT_ARROW  &kp N      &kp M         &kp COMMA     &kp DOT        &kp FSLH        &kp RSHFT
-&kp C_MUTE     &none          &none          &tt2          &tt1          &kp BSPC         &kp SPACE        &kp ENTER  &none         &none         &none          &none
+&kp C_MUTE     &none          &none          &hm2 2 2      &hm1 1 1      &kp BSPC         &kp SPACE        &kp ENTER  &none         &none         &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
